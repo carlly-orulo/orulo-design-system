@@ -26,7 +26,8 @@ clique e mostra tipografia, logo, grid, linguagem visual e o checklist.
 orulo-design-system/
 ├── index.html                     → guia visual interativo (comece por aqui)
 ├── docs/
-│   └── diretrizes-de-criacao.md   → as diretrizes completas (fonte da verdade)
+│   ├── diretrizes-de-criacao.md   → as diretrizes completas (fonte da verdade)
+│   └── playbook-cards-sociais.md  → consulta rápida pra criar cards de rede social
 ├── tokens/
 │   ├── colors.css                 → cores oficiais como variáveis CSS
 │   └── tokens.json                → todos os tokens (cores, tipografia, grid)

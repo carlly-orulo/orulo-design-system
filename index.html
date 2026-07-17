@@ -50,8 +50,16 @@
     background:color-mix(in srgb, var(--bg) 78%, transparent);
     border-bottom:1px solid var(--surface-line);}
   .nav-inner{display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px 0}
-  .brand{font-weight:700; font-size:24px; letter-spacing:-.02em; color:var(--logo)}
-  .brand small{font-weight:500; font-size:12px; color:var(--fg-faint); letter-spacing:.14em; text-transform:uppercase; margin-left:10px}
+  .brand{display:flex; align-items:center; gap:12px; font-weight:700; font-size:24px; letter-spacing:-.02em; color:var(--logo)}
+  .brand small{font-weight:500; font-size:12px; color:var(--fg-faint); letter-spacing:.14em; text-transform:uppercase}
+  .logo-mark{height:22px; width:auto; display:block}
+  html[data-mode="claro"] .logo-branco{display:none}
+  html[data-mode="escuro"] .logo-azul{display:none}
+  .logo-show{border-radius:var(--raio); padding:48px 40px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; border:1px solid var(--surface-line); min-height:210px}
+  .logo-show img{width:min(70%,260px); height:auto}
+  .logo-show span{font-size:13px; font-weight:500; letter-spacing:.02em}
+  .logo-show-claro{background:#FFFFFF; color:#7B7B7B}
+  .logo-show-escuro{background:linear-gradient(160deg,#0037FF,#01178B); color:rgba(255,255,255,.78)}
   .nav-links{display:flex; gap:6px; flex-wrap:wrap}
   .nav-links a{color:var(--fg-soft); text-decoration:none; font-size:13px; font-weight:500; padding:8px 12px; border-radius:999px; transition:.2s}
   .nav-links a:hover{color:var(--fg); background:var(--surface)}
@@ -174,7 +182,11 @@
 
 <nav>
   <div class="wrap nav-inner">
-    <div class="brand">órulo <small>Design System</small></div>
+    <div class="brand">
+      <img class="logo-mark logo-azul" src="assets/logo/orulo-azul.svg" alt="órulo">
+      <img class="logo-mark logo-branco" src="assets/logo/orulo-branco.svg" alt="órulo">
+      <small>Design System</small>
+    </div>
     <div class="nav-links">
       <a href="#principio">Princípio</a>
       <a href="#modos">Modos</a>
@@ -279,6 +291,16 @@
     <div class="kicker"><span class="num">05</span> Logo · inegociável</div>
     <h2>Wordmark <span style="color:var(--logo)">órulo</span> — discreto e no lugar certo.</h2>
     <p class="lead">Minúsculo, com o pingo sobre o "o". Proporção ≈ 3.32:1. Assinatura discreta, no rodapé. Preservar respiro ao redor, nunca distorcer.</p>
+    <div class="grid g-2">
+      <div class="logo-show logo-show-claro">
+        <img src="assets/logo/orulo-azul.svg" alt="Wordmark órulo em azul">
+        <span>Azul #0037FF · para fundos claros</span>
+      </div>
+      <div class="logo-show logo-show-escuro">
+        <img src="assets/logo/orulo-branco.svg" alt="Wordmark órulo em branco">
+        <span>Branco · para fundos escuros / azul</span>
+      </div>
+    </div>
     <div class="rules">
       <div class="rule do">
         <h4>Faça</h4>
@@ -372,7 +394,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="wm">órulo</div>
+    <img class="logo-mark logo-azul" src="assets/logo/orulo-azul.svg" alt="órulo" style="height:42px;margin:0 auto">
+    <img class="logo-mark logo-branco" src="assets/logo/orulo-branco.svg" alt="órulo" style="height:42px;margin:0 auto">
     <p>Design System · v2 · 07/2026 — Inegociáveis: cores oficiais + Poppins. O resto evolui.<br>
     Diretrizes completas em <a href="docs/diretrizes-de-criacao.md">docs/diretrizes-de-criacao.md</a> · Tokens em <a href="tokens/tokens.json">tokens/</a></p>
   </div>

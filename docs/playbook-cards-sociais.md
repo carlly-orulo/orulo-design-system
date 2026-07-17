@@ -25,7 +25,8 @@ Os detalhes completos estão nas [Diretrizes §4–§8](diretrizes-de-criacao.md
 
 - **Formato-mestre:** `1080 × 1350` (4:5) para cards de feed e carrossel. Stories: `1080 × 1920`.
 - **Dois modos que se alternam:** **Claro** (editorial, fundo branco/off-white) e **Escuro** (impacto/tech, fundo azul `#0037FF` / marinho `#01178B`). Nunca 4–5 posts seguidos no mesmo modo.
-- **Cores oficiais:** azul `#0037FF` · marinho `#01178B` · branco `#FFFFFF` · off-white `#F4F6FF` · preto `#3D3D3D` · cinza `#7B7B7B` · neon `#BCFF00` (só sinal, máx ~10%). Proporção ~70/20/10.
+- **Cores oficiais — principais:** azul `#0037FF` · branco `#FFFFFF` · marinho `#01178B` · preto `#3D3D3D` · cinza `#7B7B7B` · cinza secundário `#BDBDBD` · verde-limão neon `#BCFF00` (só sinal, máx ~10%). Off-white `#F4F6FF` é apoio derivado. Proporção ~70/20/10.
+- **Cores especiais (esporádicas, só peças especiais, nunca base):** roxo `#6610F5` · laranja `#FF7B37` · ciano `#10F7FE`.
 - **Tipografia:** **Poppins** em tudo, tracking padrão. **Exceção (só rede social):** uma fonte display diferente **só na chamada principal**, quando tiver relação direta com o tema (ex: peça de Copa).
 - **Grid:** base 8px · margem 96px · cantos arredondados (~40px) · wordmark discreto (azul em fundo claro, branco em fundo escuro), no rodapé.
 - **Regra de ouro:** 1 ideia por peça/slide · máx. 2 blocos de texto · palavra-chave destacada · muito respiro.

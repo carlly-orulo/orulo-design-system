@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Órulo — Design Tokens · Cores oficiais (inegociáveis)
+   Fonte: docs/diretrizes-de-criacao.md · §4
+   Uso: importe este arquivo e use as variáveis. Ex: color: var(--orulo-azul);
+   ========================================================================== */
+
+:root {
+  /* --- Superfícies e neutros --- */
+  --orulo-branco:            #FFFFFF; /* Fundo padrão do Modo Claro */
+  --orulo-off-white:         #F4F6FF; /* Fundo claro alternativo, cards suaves */
+  --orulo-preto:             #3D3D3D; /* Corpo de texto sobre fundo claro */
+  --orulo-cinza:             #7B7B7B; /* Texto secundário, legendas, fonte de dado */
+  --orulo-cinza-2:           #BDBDBD; /* Linhas finas, divisores */
+
+  /* --- Cores-marca --- */
+  --orulo-azul:              #0037FF; /* Cor-marca. Fundo Modo Escuro, cards, CTA */
+  --orulo-marinho:           #01178B; /* Fundo escuro premium, texto forte, números */
+
+  /* --- Sinal (nunca superfície grande, máx ~10%) --- */
+  --orulo-neon:              #BCFF00; /* Grifo de 1 palavra, selo, glow do herói */
+
+  /* --- Especiais (uso esporádico, só peças especiais — nunca base) --- */
+  --orulo-roxo:              #6610F5;
+  --orulo-laranja:           #FF7B37;
+  --orulo-ciano:             #10F7FE;
+
+  /* --- Sombra-assinatura (discreta) --- */
+  --orulo-sombra:            0 8px 28px rgba(1, 23, 138, .08);
+
+  /* --- Degradê de profundidade (só Modo Escuro, discreto) --- */
+  --orulo-gradiente-escuro:  linear-gradient(160deg, #0037FF 0%, #01178B 100%);
+
+  /* --- Grid --- */
+  --orulo-base:              8px;   /* toda medida é múltiplo de 8 */
+  --orulo-margem:            96px;  /* margem externa generosa */
+  --orulo-raio-card:         40px;  /* cantos suaves @1080 */
+}

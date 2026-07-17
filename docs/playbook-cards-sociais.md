@@ -158,7 +158,7 @@ Nada é obrigatório — o importante é o feed **alternar os modos**.
 - **Estrutura de gancho:** tensão → virada → alívio/solução. A palavra que vira a chave recebe **negrito, CAIXA ou marcador**.
 - **CTAs recorrentes:** `Salva isso aqui!` · `Qual você prefere e por quê?` · `Arrasta ›` · `Link na bio`.
 - **Números:** sempre tabulares; dado sempre com **fonte creditada** em cinza.
-- **Emoji:** ideal **0**; máx. **1** quando o pilar de humor pedir. (Na prática, peças de humor/bloco de notas às vezes usam 1–2 — use com parcimônia e nunca em peça séria/dado.)
+- **Emoji:** bem-vindo, no **estilo HubSpot** — como **marcador no início de itens de lista** (ex: 💬 / 🥱 / 🤗 antes de cada linha) e como **acento pontual** na chamada ou legenda. Mantenha consistência e alinhamento ao tom; o que evitar é emoji **jogado ao acaso** que compete com o título ou o dado.
 
 ---
 
@@ -171,7 +171,7 @@ Nada é obrigatório — o importante é o feed **alternar os modos**.
 5. Modo coerente e **alternando no feed**? Proporção ~70/20/10?
 6. Neon só como grifo/sinal (máx ~10%)? Glow só no herói (Modo Escuro)?
 7. Cantos arredondados, sombra discreta, sem quadrado duro?
-8. Poppins com tracking padrão (ou fonte de exceção **só** na chamada temática)? Números tabulares? ≤ 1 emoji?
+8. Poppins com tracking padrão (ou fonte de exceção **só** na chamada temática)? Números tabulares? Emoji com intenção (marcador/acento)?
 9. **Wordmark** discreto, só azul/branco, no rodapé?
 10. Carrossel: barra de progresso + wordmark persistentes? `ARRASTA ›` na capa? CTA `Salva isso aqui!` no fim?
 11. Dado com **fonte creditada**?

@@ -125,6 +125,7 @@ Elementos **funcionais, não decorativos**. Um elemento-assinatura protagonista 
 6. **Mini-dados** — gráfico simples (barra/linha azul, acento neon, rótulo tabular). Clareza, não realismo.
 7. **Marcador neon** — sublinhado/realce fino sob **uma** palavra-chave, ou selo pequeno. Um por peça.
 8. **Wordmark** — conforme §6.
+9. **Emoji com intenção** — no estilo HubSpot: emoji como **marcador no início de itens de lista** e como **acento pontual** na chamada ou legenda. Consistentes e alinhados ao tom, reforçando a leitura — nunca jogados ao acaso competindo com o título ou o dado.
 
 **Exclusivos do Modo Escuro:** malha de dados (linhas 1px a 6–10% de opacidade ao fundo), glow do neon (só no herói), degradê de profundidade azul→marinho, cards claros/translúcidos (nunca rgba <0.10) sobre o escuro.
 
@@ -136,7 +137,7 @@ Elementos **funcionais, não decorativos**. Um elemento-assinatura protagonista 
 - Degradê vibrante/colorido; glow espalhado (glow é só no herói do Modo Escuro).
 - Quadrados duros onde cabe arredondado; sombra pesada/dramática.
 - Poluição: setas, círculos e grifos demais; muitos ícones decorativos; malha forte competindo com o texto.
-- Muitos emojis — idealmente 0; no máx. 1 quando o pilar (humor) pedir.
+- Emoji **jogado ao acaso**, que compete com o título ou o dado. (Emojis são bem-vindos com intenção — ver §8, item 9.)
 - Textos longos / mais de 2 blocos de texto / mais de 1 ideia por slide.
 - Vários prints no mesmo slide.
 - Logo gigante ou central sem motivo; logo fora do azul/branco; distorcido.
@@ -185,7 +186,7 @@ Narrativa com estrutura editorial. Ritmo: **texto → evidência → explicaçã
 | **Educação** | Claro | Cards arredondados, passos numerados, mini-dados, ícones. CTA "salve este post" |
 | **Investimento & valorização** | Escuro | Número-dado grande com glow neon + malha de dados. Palavra-chave grifada. Fonte do dado embaixo. Co-branding de podcast discreto |
 | **Eventos B2B & palestras** | Escuro | Pôster premium: cidade/tema como título grande, data/local tabular, palestrante em card, selo neon "ingresso gratuito", "link na bio" |
-| **Humor & rotina** | Alterna | Azul, headline punch, uma ideia, balão arredondado. Neon só no grifo. Máx. 1 emoji |
+| **Humor & rotina** | Alterna | Azul, headline punch, uma ideia, balão arredondado. Neon só no grifo. Emoji com intenção (marcador/acento) |
 
 Nada é obrigatório — o importante é o feed **alternar** os modos.
 
@@ -200,7 +201,7 @@ Nada é obrigatório — o importante é o feed **alternar** os modos.
 5. Prova social (se aplicável): print/depoimento como evidência principal, em mockup/balão?
 6. Modo coerente com §3.1 e **alternando no feed**? Proporção ~70/20/10? Neon só grifo/herói? Glow só no herói (Modo Escuro)? Contraste ≥ 4.5:1?
 7. Cantos arredondados, sombra discreta, sem quadrado duro?
-8. Poppins, tracking padrão, tabular nos dados, ≤ 1 emoji (ideal 0)?
+8. Poppins, tracking padrão, tabular nos dados? Emoji com intenção (marcador/acento, estilo HubSpot)?
 9. Wordmark discreto, só azul/branco, no lugar padrão?
 10. Carrossel: contador tabular + rodapé persistentes? Sequência conduz ao próximo? CTA discreto no fecho?
 11. Nenhum anti-pattern (§9)?

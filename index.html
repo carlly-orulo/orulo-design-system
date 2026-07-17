@@ -122,8 +122,11 @@
   .modo-escuro .wm{color:#fff} .modo-claro .wm{color:#0037FF}
 
   /* ===== Cores ===== */
-  .swatches{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:44px}
+  .swatches{display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:18px}
   @media(max-width:860px){.swatches{grid-template-columns:repeat(2,1fr)}}
+  .sub-h{font-weight:700; font-size:15px; letter-spacing:.14em; text-transform:uppercase; color:var(--azul); margin:44px 0 0}
+  .sub-h:first-of-type{margin-top:36px}
+  .sub-h span{color:var(--cinza); font-weight:500; letter-spacing:.02em; text-transform:none}
   .sw{border-radius:20px; overflow:hidden; border:1px solid var(--surface-line); cursor:pointer; transition:transform .2s var(--ease), box-shadow .2s}
   .sw:hover{transform:translateY(-4px); box-shadow:var(--sombra)}
   .sw .chipcolor{height:96px; display:flex; align-items:flex-end; justify-content:flex-end; padding:10px}
@@ -207,7 +210,7 @@
     <p class="hero-sub">A maior plataforma de imóveis novos do Brasil. Um design system claro, sofisticado e acessível — construído sobre dois modos que se alternam e uma base inegociável: as cores oficiais e a Poppins.</p>
     <div class="hero-meta">
       <span class="chip"><b>2</b> modos</span>
-      <span class="chip"><b>8</b> cores oficiais</span>
+      <span class="chip"><b>10</b> cores oficiais</span>
       <span class="chip"><b>Poppins</b> · tracking padrão</span>
       <span class="chip">Grid <b>8px</b> · margem <b>96px</b></span>
     </div>
@@ -258,15 +261,18 @@
 <section id="cores">
   <div class="wrap">
     <div class="kicker"><span class="num">03</span> Cores oficiais · inegociável</div>
-    <h2>Oito cores. Uma proporção. Clique para copiar.</h2>
+    <h2>A paleta oficial. Clique para copiar.</h2>
     <p class="lead">A proporção vale para os dois modos: ~70% superfície dominante, ~20% cor de apoio e <span class="u-neon">no máximo ~10% de neon</span> — sempre como sinal, nunca superfície. Contraste de texto sempre ≥ 4.5:1.</p>
+    <h3 class="sub-h">Principais <span>· uso em grandeza</span></h3>
     <div class="swatches" id="swatches"></div>
     <div class="proporcao">
       <span class="p70">70% · dominante</span>
       <span class="p20">20% · apoio</span>
       <span class="p10">10% · neon</span>
     </div>
-    <p class="note"><b>Especiais</b> (uso esporádico, só peças especiais, nunca base): roxo #6610F5 · laranja #FF7B37 · ciano #10F7FE.</p>
+    <h3 class="sub-h">Especiais <span>· esporádicas, só em peças especiais — nunca base</span></h3>
+    <div class="swatches" id="swatches-especiais"></div>
+    <p class="note">O <b>off-white #F4F6FF</b> é um tom de apoio derivado (fundo claro alternativo), fora da paleta do manual.</p>
   </div>
 </section>
 
@@ -405,25 +411,34 @@
 
 <script>
   const COLORS = [
-    {nm:'Branco', hx:'#FFFFFF', role:'Fundo padrão do Modo Claro', txt:'#3D3D3D', border:true},
-    {nm:'Off-white azulado', hx:'#F4F6FF', role:'Fundo claro alternativo, cards suaves', txt:'#3D3D3D', border:true},
     {nm:'Azul principal', hx:'#0037FF', role:'Cor-marca. Fundo escuro, cards, CTA', txt:'#fff'},
+    {nm:'Branco', hx:'#FFFFFF', role:'Fundo padrão do Modo Claro', txt:'#3D3D3D', border:true},
+    {nm:'Off-white azulado', hx:'#F4F6FF', role:'Fundo claro alternativo (apoio derivado)', txt:'#3D3D3D', border:true},
     {nm:'Marinho', hx:'#01178B', role:'Fundo escuro premium, números', txt:'#fff'},
     {nm:'Preto principal', hx:'#3D3D3D', role:'Corpo de texto sobre fundo claro', txt:'#fff'},
     {nm:'Cinza', hx:'#7B7B7B', role:'Texto secundário, legendas', txt:'#fff'},
     {nm:'Cinza secundário', hx:'#BDBDBD', role:'Linhas finas, divisores', txt:'#3D3D3D'},
     {nm:'Verde-limão neon', hx:'#BCFF00', role:'Sinal: grifo, selo, glow do herói', txt:'#01178B'},
   ];
-  const box = document.getElementById('swatches');
-  COLORS.forEach(c=>{
-    const el = document.createElement('div');
-    el.className='sw'; el.title='Clique para copiar '+c.hx;
-    el.innerHTML = `<div class="chipcolor" style="background:${c.hx};${c.border?'border-bottom:1px solid #E7EAF6':''}">
-        <span class="copy" style="color:${c.txt};background:${c.txt==='#fff'?'rgba(0,0,0,.22)':'rgba(255,255,255,.5)'}">${c.hx}</span></div>
-      <div class="meta"><div class="nm">${c.nm}</div><div class="hx">${c.hx}</div><div class="role">${c.role}</div></div>`;
-    el.addEventListener('click',()=>copy(c.hx));
-    box.appendChild(el);
-  });
+  const ESPECIAIS = [
+    {nm:'Roxo', hx:'#6610F5', role:'Esporádica · peças especiais', txt:'#fff'},
+    {nm:'Laranja', hx:'#FF7B37', role:'Esporádica · peças especiais', txt:'#fff'},
+    {nm:'Ciano', hx:'#10F7FE', role:'Esporádica · peças especiais', txt:'#01178B'},
+  ];
+  function renderSwatches(list, mountId){
+    const box = document.getElementById(mountId);
+    list.forEach(c=>{
+      const el = document.createElement('div');
+      el.className='sw'; el.title='Clique para copiar '+c.hx;
+      el.innerHTML = `<div class="chipcolor" style="background:${c.hx};${c.border?'border-bottom:1px solid #E7EAF6':''}">
+          <span class="copy" style="color:${c.txt};background:${c.txt==='#fff'?'rgba(0,0,0,.22)':'rgba(255,255,255,.5)'}">${c.hx}</span></div>
+        <div class="meta"><div class="nm">${c.nm}</div><div class="hx">${c.hx}</div><div class="role">${c.role}</div></div>`;
+      el.addEventListener('click',()=>copy(c.hx));
+      box.appendChild(el);
+    });
+  }
+  renderSwatches(COLORS, 'swatches');
+  renderSwatches(ESPECIAIS, 'swatches-especiais');
 
   const toast = document.getElementById('toast');
   let toastT;
